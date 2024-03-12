@@ -4,129 +4,228 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Miguel Padrón, Diseñador digital</title>
-        <link rel="stylesheet" href="/css/styles.css">
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/styles.css">
     </head>
 
-<!-- ****** BODY ****** -->
     <body>
+      <header>
+        <a class="logo p-5 d-none d-md-block" href="#">
+          <img class="ms-5 my-3" src="/assets/img/logos/logo.png" alt="Logo Miguel Padrón, Diseñador digital">
+        </a>
 
-        <!-- ****** HEADER ****** -->
-        <header>
-            <a class="logo" href="#">
-                <img src="/assets/img/logo.png" alt="Logo Miguel Padrón, Diseñador digital">
+        <nav class="d-none d-md-block navbar navbar-expand bg-body-tertiary pt-3 pb-0">
+            <div class="container-fluid"><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="menu navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center fs-5">
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>m
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="./sobremi.html">Sobre mí</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <nav class="d-lock d-md-none navbar navbar-dark p-0">
+          <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="#"><img src="../assets/img/logos/logoResponsive.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end p-3" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <img src="../assets/img/logos/isotipo.png" alt="isotipo Miguel Padrón">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body mt-5">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link fs-2 fw-semibold active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-2 fw-semibold" href="./proyectos.html">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-2 fw-semibold" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-2 fw-semibold" href="./sobremi.html">Sobre mí</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-2 fw-semibold" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mx-auto mb-3">
+                <a class="ps-3" href="https://www.instagram.com/ux.migue/" target="_blank"><img src="/assets/img/iconosSocial/instagram-logo-negativo.png" alt="Instagram Miguel Padrón"></a>
+                <a class="ps-3" href="https://www.linkedin.com/in/mipadron/" target="_blank"><img src="/assets/img/iconosSocial/linkedin-logo-negativo.png" alt="Linkedin Miguel Padrón"></a>
+                <a class="ps-3" href="https://www.behance.net/miguelpadrn" target="_blank"><img src="/assets/img/iconosSocial/behance-logo-negativo.png" alt="Behance Miguel Padrón"></a>
+                <a class="ps-3" href="https://github.com/uxmigue" target="_blank"><img src="/assets/img/iconosSocial/github-logo-negativo.png" alt="GitHub Miguel Padrón"></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+        <main>
+          <section class="seccionArticulos">
+              <h1 class="fw-semibold fs-1 my-5 ms-5">Blog</h1>
+
+              <div>
+                <div class="row">
+                  <div class="col">
+                    <div class="card-group">
+
+                      <div class="card border border-black">
+                        <img src="/assets/img/blog/sistema-diseño.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text"><small class="text-body-secondary">(Junio, 2023)</small></p>
+                          <h5 class="card-title fw-semibold fs-3">Guía práctica de UI Systems</h5>
+                          <p class="card-text fs-5">Descubre cómo mejorar tus diseños con nuestra guía de UI Systems. Aprende a crear sistemas de diseño eficientes para tus proyectos web y de apps.</p>
+                        </div>
+                      </div>
+
+                      <div class="card border border-black">
+                        <img src="/assets/img/blog/lean.png" class="card-img-top" alt="...">
+                        <div class="card-body"><p class="card-text"><small class="text-body-secondary">(Febrero, 2023)</small></p>
+                          <h5 class="card-title fw-semibold fs-3">¿Qué es Lean UX?</h5>
+                          <p class="card-text fs-5">Explora el mundo del diseño ágil con nuestro artículo sobre Lean UX. Descubre cómo esta metodología puede ayudarte a crear productos adaptativos y centrados en el usuario.</p>
+                        </div>
+                      </div>
+
+                      <div class="card border border-black">
+                        <img src="/assets/img/blog/programacion.png" class="card-img-top" alt="...">
+                        <div class="card-body"><p class="card-text"><small class="text-body-secondary">(Julio, 2022)</small></p>
+                          <h5 class="card-title fw-semibold fs-3">¿Programar es lo mío?</h5>
+                          <p class="card-text fs-5">Descubre si la programación es para ti. Exploraremos las habilidades necesarias y las oportunidades de carrera en este emocionante campo.</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="card-group">
+
+                      <div class="card border border-black">
+                        <img src="/assets/img/blog/branding.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text"><small class="text-body-secondary">(Junio, 2023)</small></p>
+                          <h5 class="card-title fw-semibold fs-3">Crea una marca sólida</h5>
+                          <p class="card-text fs-5">Aprende a construir una marca distintiva con nuestra guía paso a paso. Establece una presencia memorable en el mercado con una estrategia de branding efectiva.</p>
+                        </div>
+                      </div>
+
+                      <div class="card border border-black">
+                        <img src="/assets/img/blog/ui-desktop.png" class="card-img-top" alt="...">
+                        <div class="card-body"><p class="card-text"><small class="text-body-secondary">(Febrero, 2023)</small></p>
+                          <h5 class="card-title fw-semibold fs-3">Las mejores UI para Desktop</h5>
+                          <p class="card-text fs-5">Explora las tendencias en diseño de interfaces de usuario para escritorio. Descubre consejos y mejores prácticas para crear experiencias excepcionales en aplicaciones de escritorio.</p></p>
+                        </div>
+                      </div>
+
+                      <div class="card border border-black">
+                        <img src="/assets/img/blog/javascript.png" class="card-img-top" alt="...">
+                        <div class="card-body"><p class="card-text"><small class="text-body-secondary">(Julio, 2022)</small></p>
+                          <h5 class="card-title fw-semibold fs-3">¿Qué es JavaScript?</h5>
+                          <p class="card-text fs-5">Sumérgete en el mundo del desarrollo web con nuestra introducción a JavaScript. Descubre cómo este lenguaje de programación está transformando la experiencia en línea.</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+ 
+          </section>
+            
+          <section class="d-none d-md-flex seccionContacto container p-5 mw-100">
+            <div class="container d-flex flex-column align-items-center justify-content-center">
+                <h2 class="fw-semibold text-center fs-2">¿Tienes un proyecto en mente?<br>¡Charlemos!</h2> 
+                <button class="botonContacto mt-3 py-2 px-5 rounded-3 fw-semibold fs-3">Contacto</button>
+            </div>
+          </section>
+
+          <section class="d-flex d-md-none seccionContactoResponsive container p-5 mw-100">
+            <div class="container d-flex flex-column align-items-center">
+                <h2 class="fw-semibold text-center fs-2">¿Tienes un proyecto en mente?<br>¡Charlemos!</h2> 
+                <button class="botonContacto mt-3 py-2 px-5 rounded-3 fw-semibold fs-3">Contacto</button>
+            </div>
+          </section>
+      </main>
+
+      <footer class="py-5">
+
+        <div class="d-none d-md-flex justify-content-between">
+          <div class="logoFooter">
+            <a class="logo p-5" href="/index.html">
+              <img class="ms-5 my-3" src="/assets/img/logos/logo-negativo.png" alt="Logo Miguel Padrón, Diseñador digital">
             </a>
-            <nav class="menu">
-                <ul>
-                    <li><a class="botonMenu" href="../index.html">Inicio</a></li>
-                    <li><a class="botonMenu" href="../pages/proyectos.html">Proyectos</a></li>
-                    <li><a class="botonMenu" href="../pages/blog.html">Blog</a></li>
-                    <li><a class="botonMenu" href="../pages/sobremi.html">Sobre mí</a></li>
-                    <li><a class="botonMenu" href="../pages/contacto.html">Contacto</a></li>
+          </div>
+          <div class="infoFooter me-5">
+            <nav>
+                <ul class="text-end">
+                    <li><a class="enlaceFooter text-decoration-none" href="../index.html">Inicio</a></li>
+                    <li><a class="enlaceFooter text-decoration-none" href="../pages/proyectos.html">Proyectos</a></li>
+                    <li><a class="enlaceFooter text-decoration-none" href="../pages/blog.html">Blog</a></li>
+                    <li><a class="enlaceFooter text-decoration-none" href="../pages/sobremi.html">Sobre mí</a></li>
+                    <li><a class="enlaceFooter text-decoration-none" href="../pages/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-        </header>
-
-        <!-- ****** MAIN ****** -->
-        <main>
-            <section class="seccionArticulos">
-                <h1 class="tituloDePagina">Blog</h1>
-
-                <!-- ****** SECCION PROYECTOS ****** -->
-                <div class="cardProyecto">
-                    <img class="imgProyectoCard" src="/assets/img/sitema-diseño.png" alt="Sistemas de diseño, Miguel Padrón">
-                    <div class="infoProyectoCard">
-                        <p>(Junio, 2023)</p>
-                        <h3>Guía práctica de UI Systems</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore nobis corporis quod ullam placeat labore mollitia est voluptas temporibus esse.</p>
-                    </div>
-                </div>
-
-                <div class="cardProyecto">
-                    <img class="imgProyectoCard" src="/assets/img/lean.png" alt="Lean UX, Miguel Padrón">
-                    <div class="infoProyectoCard">
-                        <p>(Febrero, 2023)</p>
-                        <h3>¿Qué es Lean UX?</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore nobis corporis quod ullam placeat labore mollitia est voluptas temporibus esse.</p>
-                    </div>
-                </div>
-
-                <div class="cardProyecto">
-                    <img class="imgProyectoCard" src="/assets/img/programacion.png" alt="Programación, Miguel Padrón">
-                    <div class="infoProyectoCard">
-                        <p>(Julio, 2022)</p>
-                        <h3>¿Programar es lo mío?</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore nobis corporis quod ullam placeat labore mollitia est voluptas temporibus esse.</p>
-                    </div>
-                </div>
-
-                <div class="cardProyecto">
-                    <img class="imgProyectoCard" src="/assets/img/branding.png" alt="Branding, Miguel Padrón">
-                    <div class="infoProyectoCard">
-                        <p>(Junio, 2023)</p>
-                        <h3>Crea una marca sólida</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore nobis corporis quod ullam placeat labore mollitia est voluptas temporibus esse.</p>
-                    </div>
-                </div>
-
-                <div class="cardProyecto">
-                    <img class="imgProyectoCard" src="/assets/img/ui-desktop.png" alt="UI Desktop, Miguel Padrón">
-                    <div class="infoProyectoCard">
-                        <p>(Febrero, 2023)</p>
-                        <h3>Los mejores UI para Desktop</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore nobis corporis quod ullam placeat labore mollitia est voluptas temporibus esse.</p>
-                    </div>
-                </div>
-
-                <div class="cardProyecto">
-                    <img class="imgProyectoCard" src="/assets/img/javascript.png" alt="javascript, Miguel Padrón">
-                    <div class="infoProyectoCard">
-                        <p>(Julio, 2022)</p>
-                        <h3>¿Qué es JavaScript?</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore nobis corporis quod ullam placeat labore mollitia est voluptas temporibus esse.</p>
-                    </div>
-                </div>
-            </section>
-
-
-            <!-- ****** SECCION CONTACTO ****** -->
-            <section id="seccionContacto">
-                <div class="callActionContacto">
-                   <h2>¿Tienes un proyecto en mente?<br>¡Charlemos!</h2> 
-                   <button class="botonContacto">Contacto</button>
-                </div>
-            </section>
-        </main>
-
-        <!-- ****** FOOTER ****** -->
-        <footer>
-            <div class="logoFooter">
-                <a href="../index.html">
-                    <img src="/assets/img/logo-negativo.png" alt="Logo Miguel Padrón, Diseñador digital">
-                </a>
+            <div class="redesFooter">
+                <a class="ps-3" href="https://www.instagram.com/ux.migue/" target="_blank"><img src="/assets/img/iconosSocial/instagram-logo-negativo.png" alt="Instagram Miguel Padrón"></a>
+                <a class="ps-3" href="https://www.linkedin.com/in/mipadron/" target="_blank"><img src="/assets/img/iconosSocial/linkedin-logo-negativo.png" alt="Linkedin Miguel Padrón"></a>
+                <a class="ps-3" href="https://www.behance.net/miguelpadrn" target="_blank"><img src="/assets/img/iconosSocial/behance-logo-negativo.png" alt="Behance Miguel Padrón"></a>
+                <a class="ps-3" href="https://github.com/uxmigue" target="_blank"><img src="/assets/img/iconosSocial/github-logo-negativo.png" alt="GitHub Miguel Padrón"></a>
             </div>
-            
-            <div class="infoFooter">
-                <nav>
-                    <ul>
-                        <li><a class="enlaceFooter" href="../index.html">Inicio</a></li>
-                        <li><a class="enlaceFooter" href="../pages/proyectos.html">Proyectos</a></li>
-                        <li><a class="enlaceFooter" href="../pages/blog.html">Blog</a></li>
-                        <li><a class="enlaceFooter" href="../pages/sobremi.html">Sobre mí</a></li>
-                        <li><a class="enlaceFooter" href="../pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-                <div class="redesFooter">
-                    <a href="https://www.instagram.com/ux.migue/" target="_blank"><img src="/assets/img/instagram-logo-negativo.png" alt="Instagram Miguel Padrón"></a>
-                    <a href="https://www.linkedin.com/in/mipadron/" target="_blank"><img src="/assets/img/linkedin-logo-negativo.png" alt="Linkedin Miguel Padrón"></a>
-                    <a href="https://www.behance.net/miguelpadrn" target="_blank"><img src="/assets/img/behance-logo-negativo.png" alt="Behance Miguel Padrón"></a>
-                    <a href="https://github.com/uxmigue" target="_blank"><img src="/assets/img/github-logo-negativo.png" alt="GitHub Miguel Padrón"></a>
-                </div>
-            </div>
-        </footer>
+        </div>
+        </div>
         
+        <div class="d-block d-md-none">
+          <a class="logo ms-4" href="#">
+            <img class="ms-1 my-1" src="/assets/img/logos/logo-negativoResponsive.png" alt="Logo Miguel Padrón, Diseñador digital">
+          </a>
+          <hr class="lineaHorizontalResponsive w-50 ms-4 border border-2">
+          <div class="ms-1 my-1">
+            <ul>
+              <li><a class="enlaceFooter text-decoration-none fs-1" href="../index.html">Inicio</a></li>
+              <li><a class="enlaceFooter text-decoration-none fs-1" href="../pages/proyectos.html">Proyectos</a></li>
+              <li><a class="enlaceFooter text-decoration-none fs-1" href="../pages/blog.html">Blog</a></li>
+              <li><a class="enlaceFooter text-decoration-none fs-1" href="../pages/sobremi.html">Sobre mí</a></li>
+              <li><a class="enlaceFooter text-decoration-none fs-1" href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <hr class="lineaHorizontalResponsive w-50 ms-4 border border-2">
+          <div class="ms-3">
+            <a class="ps-3" href="https://www.instagram.com/ux.migue/" target="_blank"><img src="/assets/img/iconosSocial/instagram-logo-negativo.png" alt="Instagram Miguel Padrón"></a>
+            <a class="ps-3" href="https://www.linkedin.com/in/mipadron/" target="_blank"><img src="/assets/img/iconosSocial/linkedin-logo-negativo.png" alt="Linkedin Miguel Padrón"></a>
+            <a class="ps-3" href="https://www.behance.net/miguelpadrn" target="_blank"><img src="/assets/img/iconosSocial/behance-logo-negativo.png" alt="Behance Miguel Padrón"></a>
+            <a class="ps-3" href="https://github.com/uxmigue" target="_blank"><img src="/assets/img/iconosSocial/github-logo-negativo.png" alt="GitHub Miguel Padrón"></a>
+          </div>
+          <p class="copyright ps-5 mt-3">&copy; Miguel Padrón, 2024</p>
+        </div>
+
+      </footer>
+        
+        <script src="../js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

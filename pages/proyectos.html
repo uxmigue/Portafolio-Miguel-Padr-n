@@ -4,131 +4,223 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Miguel Padrón, Diseñador digital</title>
-        <link rel="stylesheet" href="/css/styles.css">
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/styles.css">
     </head>
 
-<!-- ****** BODY ****** -->
     <body>
 
-        <!-- ****** HEADER ****** -->
-        <header>
-            <a class="logo" href="#">
-                <img src="/assets/img/logo.png" alt="Logo Miguel Padrón, Diseñador digital">
+      <header>
+        <a class="logo p-5 d-none d-md-block" href="#">
+          <img class="ms-5 my-3" src="/assets/img/logos/logo.png" alt="Logo Miguel Padrón, Diseñador digital">
+        </a>
+
+        <nav class="d-none d-md-block navbar navbar-expand bg-body-tertiary pt-3 pb-0">
+            <div class="container-fluid"><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="menu navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center fs-5">
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>m
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="#">Proyectos</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="./blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="./sobremi.html">Sobre mí</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <nav class="d-lock d-md-none navbar navbar-dark p-0">
+          <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="#"><img src="../assets/img/logos/logoResponsive.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end p-3" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <img src="../assets/img/logos/isotipo.png" alt="">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body mt-5">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link fs-2 fw-semibold active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-2 fw-semibold" href="#">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-2 fw-semibold" href="./blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-2 fw-semibold" href="./sobremi.html">Sobre mí</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-2 fw-semibold" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mx-auto mb-3">
+                <a class="ps-3" href="https://www.instagram.com/ux.migue/" target="_blank"><img src="/assets/img/iconosSocial/instagram-logo-negativo.png" alt="Instagram Miguel Padrón"></a>
+                <a class="ps-3" href="https://www.linkedin.com/in/mipadron/" target="_blank"><img src="/assets/img/iconosSocial/linkedin-logo-negativo.png" alt="Linkedin Miguel Padrón"></a>
+                <a class="ps-3" href="https://www.behance.net/miguelpadrn" target="_blank"><img src="/assets/img/iconosSocial/behance-logo-negativo.png" alt="Behance Miguel Padrón"></a>
+                <a class="ps-3" href="https://github.com/uxmigue" target="_blank"><img src="/assets/img/iconosSocial/github-logo-negativo.png" alt="GitHub Miguel Padrón"></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+        
+      <main>
+        <section class="seccionProyectos">
+            <h1 class="fw-semibold fs-1 my-5 ms-5">Proyectos</h1>
+
+            <div class="proyectoContainer">
+                <div class="imgProyectoMain">
+                    <img class="mw-100" src="../assets/img/proyectos/floppinPortada.png" alt="Floppin, Miguel Padrón">
+                </div>
+                <div class="infoProyectoMain p-5 d-flex justify-content-evenly">
+                    <div>
+                        <h2 class="tituloElemento fs-2 fw-semibold me-4">Floppin</h2>
+                    </div>
+                    <div class="detalleProyecto">
+                        <p>(Junio, 2023)</p>
+                        <p>Floppin es un e-commerce que reúne los comercios de Flores, CABA en un solo lugar.</p>
+                        <div class="proyectoPill d-flex">
+                            <p class="rounded-pill px-3 py-1 me-2">UX/UI</p>
+                            <p class="rounded-pill px-3 py-1 me-2">Branding</p>
+                            <p class="rounded-pill px-3 py-1 me-2">Figma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyectoContainer">
+                <div class="imgProyectoMain">
+                    <img class="mw-100" src="../assets/img/proyectos/sube+Portada.png" alt="Floppin, Miguel Padrón">
+                </div>
+                <div class="infoProyectoMain p-5 d-flex justify-content-evenly">
+                    <div>
+                        <h2 class="tituloElemento fs-2 fw-semibold me-4">SUBE+</h2>
+                    </div>
+                    <div class="detalleProyecto">
+                        <p>(Febrero, 2023)</p>
+                        <p>SUBE+ es la plataforma que mejora y agiliza la movilidad del usuario en el transporte público.</p>
+                        <div class="proyectoPill d-flex">
+                            <p class="rounded-pill px-3 py-1 me-2">UX/UI</p>
+                            <p class="rounded-pill px-3 py-1 me-2">Branding</p>
+                            <p class="rounded-pill px-3 py-1 me-2">Figma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyectoContainer">
+                <div class="imgProyectoMain">
+                    <img class="mw-100" src="../assets/img/proyectos/tuentiPortada.png" alt="Floppin, Miguel Padrón">
+                </div>
+                <div class="infoProyectoMain p-5 d-flex justify-content-evenly">
+                    <div>
+                        <h2 class="tituloElemento fs-2 fw-semibold me-4">Rediseño Tuenti</h2>
+                    </div>
+                    <div class="detalleProyecto">
+                        <p>(Julio, 2022)</p>
+                        <p>Se evaluó y rediseñó la app de Tuenti con el objetivo de lograr una mejor accesibilidad a los servicios ofrecidos.</p>
+                        <div class="proyectoPill d-flex">
+                            <p class="rounded-pill px-3 py-1 me-2">UX/UI</p>
+                            <p class="rounded-pill px-3 py-1 me-2">Branding</p>
+                            <p class="rounded-pill px-3 py-1 me-2">Figma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="d-none d-md-flex seccionContacto container p-5 mw-100">
+          <div class="container d-flex flex-column align-items-center justify-content-center">
+              <h2 class="fw-semibold text-center fs-2">¿Tienes un proyecto en mente?<br>¡Charlemos!</h2> 
+              <button class="botonContacto mt-3 py-2 px-5 rounded-3 fw-semibold fs-3">Contacto</button>
+          </div>
+        </section>
+
+        <section class="d-flex d-md-none seccionContactoResponsive container p-5 mw-100">
+          <div class="container d-flex flex-column align-items-center">
+              <h2 class="fw-semibold text-center fs-2">¿Tienes un proyecto en mente?<br>¡Charlemos!</h2> 
+              <button class="botonContacto mt-3 py-2 px-5 rounded-3 fw-semibold fs-3">Contacto</button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="py-5">
+
+        <div class="d-none d-md-flex justify-content-between">
+          <div class="logoFooter">
+            <a class="logo p-5" href="/index.html">
+              <img class="ms-5 my-3" src="/assets/img/logos/logo-negativo.png" alt="Logo Miguel Padrón, Diseñador digital">
             </a>
-            <nav class="menu">
-                <ul>
-                    <li><a class="botonMenu" href="../index.html">Inicio</a></li>
-                    <li><a class="botonMenu" href="../pages/proyectos.html">Proyectos</a></li>
-                    <li><a class="botonMenu" href="../pages/blog.html">Blog</a></li>
-                    <li><a class="botonMenu" href="../pages/sobremi.html">Sobre mí</a></li>
-                    <li><a class="botonMenu" href="../pages/contacto.html">Contacto</a></li>
+          </div>
+          <div class="infoFooter me-5">
+            <nav>
+                <ul class="text-end">
+                    <li><a class="enlaceFooter text-decoration-none" href="../index.html">Inicio</a></li>
+                    <li><a class="enlaceFooter text-decoration-none" href="../pages/proyectos.html">Proyectos</a></li>
+                    <li><a class="enlaceFooter text-decoration-none" href="../pages/blog.html">Blog</a></li>
+                    <li><a class="enlaceFooter text-decoration-none" href="../pages/sobremi.html">Sobre mí</a></li>
+                    <li><a class="enlaceFooter text-decoration-none" href="../pages/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-        </header>
+            <div class="redesFooter">
+                <a class="ps-3" href="https://www.instagram.com/ux.migue/" target="_blank"><img src="/assets/img/iconosSocial/instagram-logo-negativo.png" alt="Instagram Miguel Padrón"></a>
+                <a class="ps-3" href="https://www.linkedin.com/in/mipadron/" target="_blank"><img src="/assets/img/iconosSocial/linkedin-logo-negativo.png" alt="Linkedin Miguel Padrón"></a>
+                <a class="ps-3" href="https://www.behance.net/miguelpadrn" target="_blank"><img src="/assets/img/iconosSocial/behance-logo-negativo.png" alt="Behance Miguel Padrón"></a>
+                <a class="ps-3" href="https://github.com/uxmigue" target="_blank"><img src="/assets/img/iconosSocial/github-logo-negativo.png" alt="GitHub Miguel Padrón"></a>
+            </div>
+        </div>
+        </div>
         
-        <!-- ****** MAIN ****** -->
-        <main>
+        <div class="d-block d-md-none">
+          <a class="logo ms-4" href="#">
+            <img class="ms-1 my-1" src="/assets/img/logos/logo-negativoResponsive.png" alt="Logo Miguel Padrón, Diseñador digital">
+          </a>
+          <hr class="lineaHorizontalResponsive w-50 ms-4 border border-2">
+          <div class="ms-1 my-1">
+            <ul>
+              <li><a class="enlaceFooter text-decoration-none fs-1" href="../index.html">Inicio</a></li>
+              <li><a class="enlaceFooter text-decoration-none fs-1" href="../pages/proyectos.html">Proyectos</a></li>
+              <li><a class="enlaceFooter text-decoration-none fs-1" href="../pages/blog.html">Blog</a></li>
+              <li><a class="enlaceFooter text-decoration-none fs-1" href="../pages/sobremi.html">Sobre mí</a></li>
+              <li><a class="enlaceFooter text-decoration-none fs-1" href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <hr class="lineaHorizontalResponsive w-50 ms-4 border border-2">
+          <div class="ms-3">
+            <a class="ps-3" href="https://www.instagram.com/ux.migue/" target="_blank"><img src="/assets/img/iconosSocial/instagram-logo-negativo.png" alt="Instagram Miguel Padrón"></a>
+            <a class="ps-3" href="https://www.linkedin.com/in/mipadron/" target="_blank"><img src="/assets/img/iconosSocial/linkedin-logo-negativo.png" alt="Linkedin Miguel Padrón"></a>
+            <a class="ps-3" href="https://www.behance.net/miguelpadrn" target="_blank"><img src="/assets/img/iconosSocial/behance-logo-negativo.png" alt="Behance Miguel Padrón"></a>
+            <a class="ps-3" href="https://github.com/uxmigue" target="_blank"><img src="/assets/img/iconosSocial/github-logo-negativo.png" alt="GitHub Miguel Padrón"></a>
+          </div>
+          <p class="copyright ps-5 mt-3">&copy; Miguel Padrón, 2024</p>
+        </div>
 
-            <!-- ****** SECCION PROYECTOS ****** -->
-            <section class="seccionProyectos">
-                <h1 class="tituloDePagina">Proyectos</h1>
-
-                <div class="proyectoContainer">
-                    <div class="imgProyectoMain">
-                        <img src="../assets/img/floppin.png" alt="Floppin, Miguel Padrón">
-                    </div>
-                    <div class="infoProyectoMain">
-                        <div>
-                            <h2 class="tituloElemento">Floppin</h2>
-                        </div>
-                        <div class="detalleProyecto">
-                            <p>(Junio, 2023)</p>
-                            <p>Floppin es un e-commerce que reúne los comercios de Flores, CABA en un solo lugar.</p>
-                            <p class="proyectoTag">UX/UI</p>
-                            <p class="proyectoTag">Branding</p>
-                            <p class="proyectoTag">Figma</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="proyectoContainer">
-                    <div class="imgProyectoMain">
-                        <img src="../assets/img/sube+.png" alt="Floppin, Miguel Padrón">
-                    </div>
-                    <div class="infoProyectoMain">
-                        <div>
-                            <h2 class="tituloElemento">SUBE+</h2>
-                        </div>
-                        <div class="detalleProyecto">
-                            <p>(Febrero, 2023)</p>
-                            <p>SUBE+ es la plataforma que mejora y agiliza la movilidad del usuario en el transporte público.</p>
-                            <p class="proyectoTag">UX/UI</p>
-                            <p class="proyectoTag">Branding</p>
-                            <p class="proyectoTag">Figma</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="proyectoContainer">
-                    <div class="imgProyectoMain">
-                        <img src="../assets/img/tuenti.png" alt="Floppin, Miguel Padrón">
-                    </div>
-                    <div class="infoProyectoMain">
-                        <div>
-                            <h2 class="tituloElemento">Rediseño Tuenti</h2>
-                        </div>
-                        <div class="detalleProyecto">
-                            <p>(Julio, 2022)</p>
-                            <p>SUBE+ es la plataforma que mejora y agiliza la movilidad del usuario en el transporte público.</p>
-                            <p class="proyectoTag">UX/UI</p>
-                            <p class="proyectoTag">Branding</p>
-                            <p class="proyectoTag">Figma</p>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <!-- ****** SECCION CONTACTO ****** -->
-            <section id="seccionContacto">
-                <div class="callActionContacto">
-                   <h2>¿Tienes un proyecto en mente?<br>¡Charlemos!</h2> 
-                   <button class="botonContacto">Contacto</button>
-                </div>
-            </section>
-        </main>
-       
-        <!-- ****** FOOTER ****** -->
-        <footer>
-            <div class="logoFooter">
-                <a href="../index.html">
-                    <img src="/assets/img/logo-negativo.png" alt="Logo Miguel Padrón, Diseñador digital">
-                </a>
-            </div>
-            
-            <div class="infoFooter">
-                <nav>
-                    <ul>
-                        <li><a class="enlaceFooter" href="../index.html">Inicio</a></li>
-                        <li><a class="enlaceFooter" href="../pages/proyectos.html">Proyectos</a></li>
-                        <li><a class="enlaceFooter" href="../pages/blog.html">Blog</a></li>
-                        <li><a class="enlaceFooter" href="../pages/sobremi.html">Sobre mí</a></li>
-                        <li><a class="enlaceFooter" href="../pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-                <div class="redesFooter">
-                    <a href="https://www.instagram.com/ux.migue/" target="_blank"><img src="/assets/img/instagram-logo-negativo.png" alt="Instagram Miguel Padrón"></a>
-                    <a href="https://www.linkedin.com/in/mipadron/" target="_blank"><img src="/assets/img/linkedin-logo-negativo.png" alt="Linkedin Miguel Padrón"></a>
-                    <a href="https://www.behance.net/miguelpadrn" target="_blank"><img src="/assets/img/behance-logo-negativo.png" alt="Behance Miguel Padrón"></a>
-                    <a href="https://github.com/uxmigue" target="_blank"><img src="/assets/img/github-logo-negativo.png" alt="GitHub Miguel Padrón"></a>
-                </div>
-            </div>
-        </footer>
-                
+      </footer>
+              
+      <script src="../js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
 

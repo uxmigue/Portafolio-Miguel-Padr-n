@@ -1,0 +1,300 @@
+/********************* ESTILOS GENERALES **********************/
+
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E6F8FE;
+}
+
+h1{
+    font-size: 45px;
+    color: #00374E;
+    line-height: 96%;
+    letter-spacing: -5%;
+    text-align: center;
+    margin: 50px 0;
+    max-width: 80%;
+}
+
+h2{
+    font-size: 45px;
+    color: #00374E;
+    line-height: 96%;
+    letter-spacing: -5%;
+    text-align: center;
+    margin: 30px 0;
+}
+
+h3{
+    font-size: 25px;
+    color: #00374E;
+    line-height: 96%;
+    letter-spacing: -5%;
+    margin: 10px 0;
+}
+
+p{
+    color: #171717;
+}
+
+/***************** FIN DE ESTILOS GENERALES ******************/
+
+
+/***************** HEADER ******************/
+
+.logo{
+    padding: 20px 120px;
+}
+
+.menu{
+    background-color: #00374E;
+    height: 40px;
+    li{
+        display: inline-block;
+    }
+}
+
+.botonMenu{
+    display: inline-block;
+    text-decoration: none;
+    color: #E6F8FE;
+    padding: 5px 20px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.imgPrincipal{
+    max-width: 100%;
+}
+
+/************* FIN DEL HEADER **************/
+
+
+/****************** MAIN *******************/
+
+#seccionPrincipal{
+    a{
+        margin: 30px;
+    }
+}
+
+.rubro{
+    display: inline-block;
+    width: 480px;
+    width: 25%;
+    padding: 30px 10px;
+    margin: 0 10px;
+    h3{
+        padding: 0;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+.lineaVertical{
+    display: inline-block;
+    border-left: 1px solid #171717; 
+    height: 100px; 
+    margin: 0 10px;
+}
+
+.lineaHorizontal{
+    border: 1px solid #7d7d7d;
+    max-width: 80%;
+    margin: 20px 0;
+}
+
+#seccionContacto{
+    height: 450px;
+    background-color: #171717;
+    h2{
+        margin: 0;
+        color: #E6F8FE;
+        padding: 80px 0 50px 0;
+    }
+    .botonContacto{
+        width: 380px;
+        height: 80px;
+        border-radius: 5px;
+        background-color: #E6F8FE;
+        color: #00374E;
+        font-size: 40px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 900;
+    }
+}
+
+.cardProyecto{
+    background-color: white;
+    display: inline-block;
+    width: 33%;
+}
+
+.imgProyectoCard{
+    max-width: 100%;
+}
+
+.infoProyectoCard{
+    padding: 20px;
+}
+
+.proyectoTag{
+    display: inline-block;
+    background-color: #00374E;
+    color: #E6F8FE;
+    padding: 5px 15px;
+    margin-top: 10px;
+    margin-right: 5px;
+    border-radius: 100px;
+}
+
+/**************** FIN DEL MAIN *****************/
+
+/******************* FOOTER ********************/
+
+footer{
+    background-color: #00374E;
+    padding: 20px 120px;
+}
+
+.redesFooter{
+    margin-top: 20px;
+    display: inline-block;
+    a{
+        margin: 10px;
+    }
+}
+
+.enlaceFooter{
+    text-decoration: none;
+    color: #E6F8FE;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.infoFooter{
+    text-align: end;
+}
+
+.infoFooter ul{
+    list-style-type: none;
+}
+
+/*************** FIN DEL FOOTER ****************/
+
+
+/*************** PÁGINA DE PROYECTOS ****************/
+
+.tituloDePagina{
+    text-align: start;
+    margin: 75px 0 75px 120px;
+}
+
+.tituloElemento{
+    text-align: start;
+    margin: 0;
+}
+
+.imgProyectoMain{
+    max-width: 100%;
+    max-height: 475px;
+    overflow: hidden;
+}
+
+.infoProyectoMain{
+    display: inline-block;
+    padding: 30px 120px;
+    width: 100%;
+}
+
+.detalleProyecto{
+    display: inline;
+}
+
+/*************** PÁGINA SOBRE MI ****************/
+
+.imgSobreMi{
+    display: inline-block;
+    max-width: 51%;
+    img{
+        max-width: 100%;
+    }
+}
+
+.contenidoSobreMi{
+    padding: 10px;
+    display: inline-block;
+    max-width: 48%;
+    h1, h2{
+        text-align: start;
+    }
+    h1{
+        font-size: 100px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+    a{
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 400;
+    }
+}
+
+.columnaRedes1 .columnaRedes2{
+    margin-right: 30px;
+    display: inline-block;
+}
+
+
+/*************** PÁGINA CONTACTO ****************/
+
+.contenedorFormulario{
+    margin: 30px 0;
+}
+
+.videopContacto{
+    display: inline-block;
+    max-width: 51%;
+}
+
+.formularioContacto{
+    display: inline-block;
+    max-width: 48%;
+    padding: 0 30px;
+}
+
+.submitButton{
+    max-width: 70%;
+    background-color: #00374E;
+    color: #E6F8FE;
+}
+
+.contenedorUbicacion{
+    margin-bottom: 50px;
+}
+
+.mapa{
+    display: inline-block;
+    max-width: 51%;
+}
+
+.direccionYHorarios{
+    display: inline-block;
+    max-width: 48%;
+    padding: 0 30px;
+    p{
+        text-align: center;
+    }
+}
+
