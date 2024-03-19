@@ -15,11 +15,11 @@
     <body>
 
       <header>
-        <a class="logo p-5 d-none d-md-block" href="#">
+        <a class="logo px-5 d-none d-md-block" href="#">
           <img class="ms-5 my-3" src="../assets/img/logos/logo.png" alt="Logo Miguel Padrón, Diseñador digital">
         </a>
 
-        <nav class="d-none d-md-block navbar navbar-expand bg-body-tertiary pt-3 pb-0">
+        <nav class="d-none d-md-block navbar navbar-expand bg-body-tertiary pt-0 pb-0">
             <div class="container-fluid"><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -47,7 +47,7 @@
 
         <nav class="d-lock d-md-none navbar navbar-dark p-0">
           <div class="container-fluid">
-            <a class="navbar-brand ms-5" href="#"><img src="../assets/img/logos/logoResponsive.png" alt=""></a>
+            <a class="navbar-brand ms-2" href="#"><img src="../assets/img/logos/logoResponsive.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -87,14 +87,48 @@
       </header>
 
         <main>
-          <div>
+          <div class="d-none d-md-block">
             <div class="row g-0">
               <div class="imgSobreMi col-md-4 w-50">
                 <img src="../assets/img/img-miguel.png" class="img-fluid rounded-start" alt="Miguel Padrón">
               </div>
               <div class="sobreMiInfo col-md-8 d-flex align-items-center">
                 <div class="ps-5">
-                  <h1 class="fw-semibold lh-1">Miguel<br>Padrón</h1>
+                  <h1 class="nombreSobreMi fw-semibold lh-1">Miguel<br>Padrón</h1>
+                  <h2 class="fs-2 fw-semibold">Diseñador UX/UI, Programador Frontend y Especialista en Branding.</h2>
+                  <p>¡Hola! Soy Miguel Padrón, un apasionado del diseño y la tecnología con experiencia en múltiples facetas del mundo digital. Con un enfoque en el diseño centrado en el usuario, el desarrollo frontend y la creación de identidades de marca sólidas, me dedico a crear experiencias digitales impactantes y memorables.</p>
+                  <p>Con una combinación única de habilidades en diseño y desarrollo, me esfuerzo por abordar cada proyecto con creatividad, atención al detalle y un enfoque centrado en el usuario. Mi pasión por la creación de experiencias digitales excepcionales me impulsa a mantenerme actualizado con las últimas tendencias y tecnologías en el campo del diseño y la programación. Estoy emocionado de colaborar contigo para dar vida a tus ideas y ayudarte a alcanzar tus objetivos en el mundo digital.</p>
+                  <div class="enlacesSobreMi d-flex">
+                    <div class="row">
+                      <div class="column">
+                        <a class="fs-2" href="https://www.instagram.com/ux.migue/" target="_blank"><img class="me-3" src="../assets/img/iconos/enlace.png" alt="Instagram">Instagram</a>
+                      </div>
+                      <div class="column">
+                        <a class="fs-2" href="https://www.linkedin.com/in/mipadron/" target="_blank"><img class="me-3" src="../assets/img/iconos/enlace.png" alt="LinkedIn">LinkedIn</a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="column">
+                        <a class="fs-2" href="https://medium.com/@ux.miguelpadron" target="_blank"><img class="me-3" src="../assets/img/iconos/enlace.png" alt="Medium">Medium</a>
+                      </div>
+                      <div class="column">
+                        <a class="fs-2" href="https://github.com/uxmigue" target="_blank"><img class="me-3" src="../assets/img/iconos/enlace.png" alt="GitHub">GitHub</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-lock d-md-none">
+            <div class="row g-0">
+              <div class="imgSobreMi col-md-4 w-100">
+                <img src="../assets/img/img-miguel.png" class="img-fluid rounded-start" alt="Miguel Padrón">
+              </div>
+              <div class="sobreMiInfo col-md-8 d-flex align-items-center w-100">
+                <div class="m-3">
+                  <h1 class="nombreSobreMiResponsive fw-semibold lh-1">Miguel<br>Padrón</h1>
                   <h2 class="fs-2 fw-semibold">Diseñador UX/UI, Programador Frontend y Especialista en Branding.</h2>
                   <p>¡Hola! Soy Miguel Padrón, un apasionado del diseño y la tecnología con experiencia en múltiples facetas del mundo digital. Con un enfoque en el diseño centrado en el usuario, el desarrollo frontend y la creación de identidades de marca sólidas, me dedico a crear experiencias digitales impactantes y memorables.</p>
                   <p>Con una combinación única de habilidades en diseño y desarrollo, me esfuerzo por abordar cada proyecto con creatividad, atención al detalle y un enfoque centrado en el usuario. Mi pasión por la creación de experiencias digitales excepcionales me impulsa a mantenerme actualizado con las últimas tendencias y tecnologías en el campo del diseño y la programación. Estoy emocionado de colaborar contigo para dar vida a tus ideas y ayudarte a alcanzar tus objetivos en el mundo digital.</p>
@@ -124,14 +158,14 @@
           <section class="d-none d-md-flex seccionContacto container p-5 mw-100">
             <div class="container d-flex flex-column align-items-center justify-content-center">
                 <h2 class="fw-semibold text-center fs-2">¿Tienes un proyecto en mente?<br>¡Charlemos!</h2> 
-                <button class="botonContacto mt-3 py-2 px-5 rounded-3 fw-semibold fs-3">Contacto</button>
-            </div>
+                <a href="../pages/contacto.html" class="text-decoration-none"><button class="botonContacto mt-3 py-2 px-5 rounded-3 fw-semibold fs-3">Contacto</button></a>
+                </div>
           </section>
-
+  
           <section class="d-flex d-md-none seccionContactoResponsive container p-5 mw-100">
             <div class="container d-flex flex-column align-items-center">
-                <h2 class="fw-semibold text-center fs-2">¿Tienes un proyecto en mente?<br>¡Charlemos!</h2> 
-                <button class="botonContacto mt-3 py-2 px-5 rounded-3 fw-semibold fs-3">Contacto</button>
+                <h2 class="fw-semibold text-center fs-2">¿Tienes un proyecto en mente?<br>¡Charlemos!</h2>
+                <a href="../pages/contacto.html" class="text-decoration-none"><button class="botonContacto mt-3 py-2 px-5 rounded-3 fw-semibold fs-3">Contacto</button></a>
             </div>
           </section>
       </main>
