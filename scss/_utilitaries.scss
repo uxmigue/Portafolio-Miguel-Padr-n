@@ -1,0 +1,10 @@
+.container-fluid {
+    --bs-gutter-x: 0;
+}
+
+.proyectoPill{
+    p{
+        background-color: map-get($colores, primario);
+        color: map-get($colores, secundario);
+    }
+}

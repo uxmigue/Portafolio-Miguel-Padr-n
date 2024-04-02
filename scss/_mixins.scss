@@ -1,0 +1,7 @@
+//El mixin está asignado en la sección Empecemos tu proyecto en el main del index
+
+@mixin contenedor ($colorFondo, $borde){
+    background-color: $colorFondo;
+    border: 3px solid $borde;
+    border-radius: 20px;
+}

@@ -1,0 +1,12 @@
+footer{
+    background-color: map-get($colores, primario);
+    .lineaHorizontalResponsive{
+        color: map-get($colores, secundario);
+    }
+    .enlaceFooter{
+        color: map-get($colores, secundario);
+    }
+    .copyright{
+        color: map-get($colores, secundario);
+    }
+}

@@ -1,0 +1,57 @@
+/* Main > Index > Sección principal */
+#seccionPrincipal{
+    .imgPrincipal{
+        max-width: 100%;
+    }
+    h1{
+        max-width: 60%;
+    }
+}
+
+/* Main > Index > Sección Empecemos tu proyecto */
+
+                // ********* MIXIN ********* //
+
+.descripcionQueHago{
+    @include contenedor (map-get($colores, secundario), rgb(14, 141, 180));
+    max-width: 30%;
+}
+
+/* Main > Index > Sección proyectos */
+
+.card{
+    img{
+        transition: all 0.5s ease;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    .card-body{
+    
+        .card-text{
+            color: map-get($colores, negro);
+        }
+        .card-title{
+            color: map-get($colores, primario);
+        }
+    }
+}
+
+/* Main > Index > Sección contacto */
+
+.seccionContacto{
+    background-color: map-get($colores, negro);
+    color: map-get($colores, secundario);
+    height: 25rem;
+}
+
+.seccionContactoResponsive{
+    background-color: map-get($colores, negro);
+    color: map-get($colores, secundario);
+    height: 16rem;
+}
+
+.botonContacto{
+    background-color: map-get($colores, secundario);
+    color: map-get($colores, primario);
+}

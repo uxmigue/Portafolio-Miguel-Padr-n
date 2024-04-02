@@ -1,0 +1,24 @@
+ /* Header */
+ .menu{
+    background-color: map-get($colores, primario);
+    li{
+        color: map-get($colores, secundario);
+        .nav-link{
+            color: map-get($colores, secundario);
+            &:hover{
+                color: map-get($colores, terciario);
+            }
+        }
+    }
+}
+
+.navbar-toggler{
+    background-color: map-get($colores, primario);
+    height: 10rem;
+    width: 4.5rem;
+    border-radius: 0;
+}
+
+.offcanvas{
+    background-color: map-get($colores, primario);
+}

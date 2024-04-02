@@ -1,0 +1,16 @@
+.contenedorContacto{
+    max-width: 40%;
+    .botonFormulario{
+        background-color: map-get($colores, primario);
+        color: map-get($colores, secundario);
+    }
+}
+
+.botonFormularioResponsive{
+    background-color: map-get($colores, primario);
+    color: map-get($colores, secundario);
+}
+
+.inputFormularios{
+    border-color: map-get($colores, negro);
+}

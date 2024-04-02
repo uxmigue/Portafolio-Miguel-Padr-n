@@ -10,12 +10,27 @@ body {
   color: #00374E;
 }
 
+.container-fluid {
+  --bs-gutter-x: 0;
+}
+
+.proyectoPill p {
+  background-color: #00374E;
+  color: #E6F8FE;
+}
+
 /* Header */
 .menu {
   background-color: #00374E;
 }
 .menu li {
   color: #E6F8FE;
+}
+.menu li .nav-link {
+  color: #E6F8FE;
+}
+.menu li .nav-link:hover {
+  color: #0095D6;
 }
 
 .navbar-toggler {
@@ -29,59 +44,41 @@ body {
   background-color: #00374E;
 }
 
-.nav-link {
-  color: #E6F8FE;
+/* Main > Index > Sección principal */
+#seccionPrincipal .imgPrincipal {
+  max-width: 100%;
 }
-.nav-link:hover {
-  color: #0095D6;
-}
-
-.container-fluid {
-  --bs-gutter-x: 0;
-}
-
-/* Main > Home > Sección principal */
-#seccionPrincipal{
-  .imgPrincipal {
-    max-width: 100%;
-  }
-} 
 #seccionPrincipal h1 {
   max-width: 60%;
 }
 
-/* Main > Home > Sección Qué hago */
+/* Main > Index > Sección Empecemos tu proyecto */
 .descripcionQueHago {
+  background-color: #E6F8FE;
+  border: 3px solid rgb(14, 141, 180);
+  border-radius: 20px;
   max-width: 30%;
 }
 
-/* Main > Home > Sección proyectos */
-.card-title {
+/* Main > Index > Sección proyectos */
+.card img {
+  transition: all 0.5s ease;
+}
+.card img:hover {
+  transform: scale(1.2);
+}
+.card .card-body .card-text {
+  color: #171717;
+}
+.card .card-body .card-title {
   color: #00374E;
 }
 
-.card-text {
-  color: #171717;
-}
-
-.proyectoPill p {
-  background-color: #00374E;
-  color: #E6F8FE;
-}
-
-.cardProyecto{
-  max-height: 50%;
-}
-
-/* Main > Home > Sección contacto */
+/* Main > Index > Sección contacto */
 .seccionContacto {
   background-color: #171717;
   color: #E6F8FE;
   height: 25rem;
-}
-.seccionContacto .container .botonContacto {
-  background-color: #E6F8FE;
-  color: #00374E;
 }
 
 .seccionContactoResponsive {
@@ -89,68 +86,53 @@ body {
   color: #E6F8FE;
   height: 16rem;
 }
-.seccionContactoResponsive .botonContacto {
+
+.botonContacto {
   background-color: #E6F8FE;
   color: #00374E;
 }
 
-/* Main > Proyectos */
-.imgProyectoMain img {
-  height: auto;
-  object-fit: cover;
-}
-
-/* Main > Sobre mí */
 .sobreMiInfo {
   max-width: 40%;
 }
-.sobreMiInfo {
-    .nombreSobreMi {
-    font-size: 9.3rem;
-  }
+.sobreMiInfo h1 {
+  font-size: 9.3rem;
 }
-
-.nombreSobreMiResponsive{
-  font-size: 5rem;
-}
-
 .sobreMiInfo .enlacesSobreMi a {
   color: #171717;
 }
 
-/* Main > Contacto */
+.sobreMiInfo .nombreSobreMiResponsive {
+  font-size: 7rem;
+}
+
 .contenedorContacto {
   max-width: 40%;
 }
-.contenedorContacto .botonFormulario{
+.contenedorContacto .botonFormulario {
   background-color: #00374E;
   color: #E6F8FE;
 }
 
-.botonFormularioResponsive{
+.botonFormularioResponsive {
   background-color: #00374E;
   color: #E6F8FE;
 }
-
 
 .inputFormularios {
   border-color: #171717;
 }
 
-/* Footer */
 footer {
   background-color: #00374E;
 }
-
-.enlaceFooter {
+footer .lineaHorizontalResponsive {
   color: #E6F8FE;
 }
-
-.lineaHorizontalResponsive {
+footer .enlaceFooter {
   color: #E6F8FE;
 }
-
-.copyright {
+footer .copyright {
   color: #E6F8FE;
 }
 

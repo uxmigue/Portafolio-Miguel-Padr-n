@@ -1,0 +1,17 @@
+.sobreMiInfo{
+    max-width: 40%;
+    h1{
+        font-size: 9.3rem;
+    }
+    .enlacesSobreMi{
+        a{
+            color: map-get($colores, negro);
+        }
+    }
+}
+
+.sobreMiInfo{
+    .nombreSobreMiResponsive{
+        font-size: 7rem;
+    }
+}
